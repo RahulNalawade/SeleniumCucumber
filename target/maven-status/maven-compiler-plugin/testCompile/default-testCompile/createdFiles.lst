@@ -1,0 +1,5 @@
+com\sadakar\common\BasePage.class
+com\sadakar\stepdefinitions\DashboardPage.class
+com\sadakar\stepdefinitions\HRMLoginPage.class
+com\sadakar\common\Hooks.class
+com\sadakar\stepdefinitions\DirectoryPage.class

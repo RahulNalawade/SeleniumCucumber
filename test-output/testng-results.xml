@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="372056" started-at="2024-10-02T15:31:29 IST" finished-at="2024-10-02T15:37:41 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.testng.runner.RunCucumberTest@64485a47]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="372056" started-at="2024-10-02T15:31:29 IST" finished-at="2024-10-02T15:37:41 IST">
+      <class name="com.cucumber.testng.runner.RunCucumberTest">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cucumber.testng.runner.RunCucumberTest@64485a47]" name="setUpClass" is-config="true" duration-ms="721" started-at="2024-10-02T15:31:29 IST" finished-at="2024-10-02T15:31:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c91fe86]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.testng.runner.RunCucumberTest@64485a47]" name="runScenario" duration-ms="310999" started-at="2024-10-02T15:31:30 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-02T15:36:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User signup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Registration on Automation exercise]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User unable to click on Continue expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User unable to click on Continue expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at com.cucumber.common.BasePage.IsTrue(BasePage.java:25)
+at com.cucumber.stepdefinitions.Registration.user_click_on_button(Registration.java:50)
+at ✽.User click on 'Continue' button(classpath:features/Signup.feature:34)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.testng.runner.RunCucumberTest@64485a47]" name="runScenario" duration-ms="13965" started-at="2024-10-02T15:36:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-02T15:36:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User verify add products in cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Registration on Automation exercise]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User unable to click on Continue Shopping expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User unable to click on Continue Shopping expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at com.cucumber.common.BasePage.IsTrue(BasePage.java:25)
+at com.cucumber.stepdefinitions.Registration.user_click_on_button(Registration.java:50)
+at ✽.User click on 'Continue Shopping' button(classpath:features/Signup.feature:43)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.testng.runner.RunCucumberTest@64485a47]" name="runScenario" duration-ms="43721" started-at="2024-10-02T15:36:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-02T15:37:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User verify address details in checkout page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Registration on Automation exercise]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User unable to click on Continue Shopping expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User unable to click on Continue Shopping expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at com.cucumber.common.BasePage.IsTrue(BasePage.java:25)
+at com.cucumber.stepdefinitions.Registration.user_click_on_button(Registration.java:50)
+at ✽.User click on 'Continue Shopping' button(classpath:features/Signup.feature:78)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.testng.runner.RunCucumberTest@64485a47]" name="tearDownClass" is-config="true" duration-ms="2613" started-at="2024-10-02T15:37:38 IST" finished-at="2024-10-02T15:37:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.testng.runner.RunCucumberTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
