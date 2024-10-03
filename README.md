@@ -22,7 +22,7 @@ Access the CLI of your operating system (e.g., iTerm for macOS or PowerShell for
 
 To run a specific feature file among multiple feature files, use the command: mvn test -Dcucumber.options="classpath:features/my_first.feature".
 
-To run using TestNG the only simple run the Testng.xml file as TestNG suite
+To run using TestNG the only simple run the testng.xml file as TestNG suite
 
 To run sepecific scenario using tag we can use RunCucumberTest.java with tag name
 
