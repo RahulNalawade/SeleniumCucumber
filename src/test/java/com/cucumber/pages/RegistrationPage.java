@@ -134,6 +134,7 @@ public class RegistrationPage extends BasePage {
 	public boolean userClickOnText(String label) {
 		boolean flag = false;
 		try {
+			Thread.sleep(3000);
 			String xpathString = RegistrationPageLocator.TEXT.replaceAll("TEXT", label);
 			driver.findElement(By.xpath(xpathString)).click();
 			return true;

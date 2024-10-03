@@ -81,7 +81,7 @@ public class AddToCartPage extends BasePage{
 		boolean flag = false;
 		try {
 			JavascriptExecutor js = (JavascriptExecutor) webDriver;
-			js.executeScript("window.scrollBy(0,375)");
+			js.executeScript("window.scrollBy(0,415)");
 			Actions action = new Actions(webDriver);
 			action.moveToElement(firstProductForHover).build().perform();
 			return true;
@@ -181,6 +181,7 @@ public class AddToCartPage extends BasePage{
 		boolean flag = false;
 		try {
 			productLink.click();
+			Thread.sleep(2000);
 			return true;
 		} catch (Exception e) {
 			return flag;
