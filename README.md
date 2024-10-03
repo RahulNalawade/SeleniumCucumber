@@ -36,3 +36,11 @@ To run sepecific scenario using tag we can use RunCucumberTest.java with tag nam
 
 /test-output/index.html
 
+**Extent Report -**
+
+/test-output/SparkReport/Spark.html
+
+**Spark Report -**
+
+/test-output/SparkReport/Spark.html
+
