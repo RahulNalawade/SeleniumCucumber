@@ -9,7 +9,7 @@ Feature: User Registration on Automation exercise
     And User click on 'Signup / Login' link
     And User verify 'New User Signup!' is visible
     And User enter following name and email address
-      | Rahul | rahul.nalawade01@xorint.com |
+      | Rahul | rahulnalawade@xorint.com |
     Then User click on 'Signup' button on home screen
     And User verify 'Enter Account Information' is visible
     And User fill all the following details to create account
@@ -53,7 +53,7 @@ Feature: User Registration on Automation exercise
     And User click on 'Signup / Login' link
     And User verify 'New User Signup!' is visible
     And User enter following name and email address
-      | Rahul | rahul.nalawade01@xorint.com |
+      | Rahul | rahulnalawade@xorint.com |
     Then User click on 'Signup' button on home screen
     And User verify 'Enter Account Information' is visible
     And User fill all the following details to create account

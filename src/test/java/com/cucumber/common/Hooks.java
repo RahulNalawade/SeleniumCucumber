@@ -35,7 +35,14 @@ public class Hooks extends BasePage {
         options.setExperimentalOption("prefs", prefs);
 		webDriver = new ChromeDriver(options);
 		webDriver.manage().window().maximize();
+		
+		
 	}
+	
+	@Before
+    public void beforeScenario(Scenario scenario) {
+        ExtentManager.createTest(scenario.getName());
+    }
 
 	@After // Cucumber After hook
 	public static void quitDriver() throws Exception {
@@ -55,6 +62,16 @@ public class Hooks extends BasePage {
 			}
 		}
 	}
+	
+	@After
+    public void afterScenario(Scenario scenario) {
+        if (scenario.isFailed()) {
+            ExtentManager.getTest().fail("Test failed: " + scenario.getName());
+        } else {
+            ExtentManager.getTest().pass("Test passed: " + scenario.getName());
+        }
+        ExtentManager.endReport();
+    }
 	
 //	@After
 //	public void cleaupAccount()

@@ -4,6 +4,7 @@ package com.cucumber.stepdefinitions;
 import java.util.Map;
 import org.openqa.selenium.JavascriptExecutor;
 import com.cucumber.common.BasePage;
+import com.cucumber.common.ExtentManager;
 import com.cucumber.pages.AddToCartPage;
 import com.cucumber.pages.CheckoutPage;
 import com.cucumber.pages.HomePage;
@@ -77,7 +78,7 @@ public class Registration extends BasePage {
 	public void user_enter_name_email(Map<String, String> userDetails) {
 		for (Map.Entry<String, String> entry : userDetails.entrySet()) {
 			Boolean name = registrationPage.userEnterName(entry.getKey());
-			int randomNum = 1 + (int) (Math.random() * 10);
+			int randomNum = 1 + (int) (Math.random() * 100);
 			String emailId = entry.getValue().concat(Integer.toString(randomNum));
 			Boolean email = registrationPage.userEnterEmail(emailId);
 			IsTrue(name, "User able to enter name as a " + entry.getKey(),

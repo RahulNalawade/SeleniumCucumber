@@ -24,8 +24,11 @@ public class BasePage {
 		try {
 			Assert.assertTrue(condition,failMessage);
 			logInfo(passMessage);
+			ExtentManager.getTest().pass(passMessage);
 		} catch (Throwable e) {
 			logError(failMessage);
+			ExtentManager.getTest().fail(failMessage);
+			ExtentManager.getTest().addScreenCaptureFromPath(SCREENSHOT_PATH_FAIL);
 			try {
 				if(webDriver!=null)
 				{

@@ -30,20 +30,23 @@ public class AddToCart extends BasePage {
 	}
 
 	@Given("User Hover over first product and click on Add to cart")
-	public void user_hover_over_first_product() {
+	public void user_hover_over_first_product() throws InterruptedException {
 		Boolean flag = addToCartPage.hoverOnFirstProduct();
+		Thread.sleep(2000);
 		GloabalVariable.strFirstProductName = addToCartPage.firstProductName.getText();
 		flag = addToCartPage.clickOnFirstProductAddToCart();
+		Thread.sleep(5000);
 		IsTrue(flag, "User able to hover over first product and able to click on Add to cart",
 				"User unable to hover over first product and unable to click on Add to cart");
 
 	}
 
 	@Given("User Hover over second product and click on Add to cart")
-	public void user_hover_over_second_product() {
+	public void user_hover_over_second_product() throws InterruptedException {
 		Boolean flag = addToCartPage.hoverOnSecondProduct();
 		GloabalVariable.strSecondProductName = addToCartPage.secondProductName.getText();
 		flag = addToCartPage.clickOnSecondProductAddToCart();
+		Thread.sleep(5000);
 		IsTrue(flag, "User able to hover over second product and able to click on Add to cart",
 				"User unable to hover over second product and unable to click on Add to cart");
 
