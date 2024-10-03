@@ -24,3 +24,15 @@ To run a specific feature file among multiple feature files, use the command: mv
 
 To run using TestNG the only simple run the Testng.xml file as TestNG suite
 
+To run sepecific scenario using tag we can use RunCucumberTest.java with tag name
+
+**Reports:**
+
+**Cucumber Report -**
+
+/target/cucumber-reports/cucumberreport.html
+
+**Test NG Report -**
+
+/test-output/index.html
+
