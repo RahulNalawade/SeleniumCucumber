@@ -42,6 +42,7 @@ public class Hooks extends BasePage {
 	@Before
     public void beforeScenario(Scenario scenario) {
         ExtentManager.createTest(scenario.getName());
+        GloabalVariable.scenario=scenario.getName();
     }
 
 	@After // Cucumber After hook
@@ -72,17 +73,5 @@ public class Hooks extends BasePage {
         }
         ExtentManager.endReport();
     }
-	
-//	@After
-//	public void cleaupAccount()
-//	{
-//		RegistrationPage registrationPage = null;
-//		registrationPage = new RegistrationPage(webDriver);
-//		Boolean flag = registrationPage.userClickOnText("Delete Account");
-//		if (flag == true) {
-//			logInfo("Account deleted succssfully");
-//		} else {
-//			logInfo("Unable to deleted Account");
-//		}
-//	}
+
 }

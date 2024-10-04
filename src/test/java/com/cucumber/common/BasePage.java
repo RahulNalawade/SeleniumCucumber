@@ -71,9 +71,12 @@ public class BasePage {
 	
 	public static String getScreenShot(WebDriver driver, String screenshotName) throws Exception {
 		try {
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy_MM_dd");
+		Date sysdate = new Date();
 	    String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String destination = SCREENSHOT_PATH_FAIL + screenshotName+GloabalVariable.scenario.getName()+dateName+".png";
+		SCREENSHOT_PATH_FAIL = System.getProperty("user.dir") + "/test-output/reports/Screenshots/Fail_" + formatter.format(sysdate) + "/";
+		String destination = SCREENSHOT_PATH_FAIL + screenshotName+GloabalVariable.scenario+dateName+".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(scrFile, finalDestination);
 		return destination;

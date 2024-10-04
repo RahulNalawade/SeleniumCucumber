@@ -12,6 +12,6 @@ public class GloabalVariable {
 	public static String strState= "";
 	public static String strCountry= "";
 	public static String strUserName= "";
-	public static Scenario scenario;
+	public static String scenario;
 
 }
